@@ -6,10 +6,14 @@ li {
 
 .logo {
     color: #2196F3;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
     text-decoration: none;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 900;
+}
+
+.logo2 {
+    color: #000;
 }
 
 .nav-list-menu a {
@@ -21,6 +25,10 @@ li {
 }
 
 .nav-list-menu a:active {
+    color: #2196F3;
+}
+
+.nav-list-menu a:hover{
     color: #2196F3;
 }
 
@@ -37,6 +45,10 @@ li {
     color: #2196F3;
 }
 
+.nav-list-info a:hover{
+    color: #2196F3;
+}
+
             /* main */
 
 .cap-tittle {
@@ -45,6 +57,7 @@ li {
     font-size: 44px;
     color: #fff;
     background: #212121;
+    text-transform: uppercase;
 }
 
 .cap-button {
@@ -99,7 +112,7 @@ li {
 .our-command-tittle {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 36px;
 }
 
 .our-command-discription {
