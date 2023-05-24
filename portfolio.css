@@ -1,3 +1,8 @@
+body {
+    font-family: 'Roboto'
+}
+
+
 a {
     text-decoration: none;
 }
@@ -7,11 +12,12 @@ li {
 }
 
 .logo {
-    color: #2196F3;
     font-family: 'Raleway';
-    text-decoration: none;
+    font-weight: 700;
     font-size: 26px;
-    font-weight: 900;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
 }
 
 .logo2 {
@@ -23,11 +29,11 @@ li {
 }
 
 .nav-list-menu a {
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #000;
     text-decoration: none;
     font-size: 14px;
+    line-height: 1.14;
 }
 
 .nav-list-menu a:active {
@@ -40,10 +46,10 @@ li {
 
 .nav-list-info a{
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #757575;
     font-size: 14px;
+    line-height: 1.14;
 
 }
 
@@ -58,11 +64,9 @@ li {
         /* main */
 
 .filters-button {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -82,21 +86,17 @@ li {
 }
 
 .portfolio-tittle {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
 }
 
 .portfolio-discription {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
 }
@@ -113,21 +113,17 @@ footer {
 
 
 .footer-address {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
 .footer-list a {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -135,4 +131,14 @@ footer {
 .footer-list {
     margin: 0;
     padding: 0;
+}
+
+
+header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.66;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
