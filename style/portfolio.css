@@ -2,15 +2,6 @@ body {
     font-family: 'Roboto'
 }
 
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -133,12 +124,3 @@ footer {
     padding: 0;
 }
 
-
-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.66;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
