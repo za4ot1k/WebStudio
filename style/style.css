@@ -97,8 +97,11 @@ nav {
     margin: auto;
 }
 
+.cap {
+    padding: 200px 200px;
+}
+
 .cap-tittle {
-    margin-top: 210px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -121,13 +124,12 @@ nav {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    margin-bottom: 200px;
+    color: #FFFFFF; 
 
 }
 
 .why-us {
-    margin-top: 94px;
+    padding: 94px 215px 47px 215px;
 }
 
 .why-us h3 {
@@ -147,9 +149,6 @@ nav {
     color: #757575;
 }
 
-.what-we-do {
-    margin-top: 94px;
-}
 
 .what-we-do-tittle {
     font-weight: 700;
@@ -160,9 +159,7 @@ nav {
     color: #212121;
 }
 
-.our-command {
-    margin-top: 94px;
-}
+
 
 .our-command-list {
     display: flex;
@@ -179,12 +176,17 @@ nav {
     
 }
 
+.what-we-do {
+    padding: 47px 215px 94px 215px;
+}
+
 .what-we-do-list {
     display: flex;
     justify-content: center;
 }
 
 .our-command {
+    padding: 94px 215px 94px 215px;
     background-color: #F5F4FA;
 }
 
@@ -229,21 +231,20 @@ nav {
 
         /* footer */
 
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 215px;
+    background-color: #2F303A;
+}
+
 .footer-container {
     width: 1600px;
     margin: auto;
     padding: 0;
-    background-color: #2F303A;
     height: 252px;
+    outline: solid #ff1111;
 }
-
-/* footer {
-    padding: 0;
-    background-color: #2F303A;
-    height: 252px;
-    
-} */
-
 
 
 .footer-address {
