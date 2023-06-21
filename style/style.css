@@ -100,7 +100,7 @@ nav {
 }
 
 .cap {
-    padding: 200px 200px;
+    padding: 200px 0px 200px 0px ;
 }
 
 .cap-tittle {
@@ -131,7 +131,7 @@ nav {
 }
 
 .why-us {
-    padding: 94px 215px 47px 215px;
+    padding: 94px 0px 47px 0px;
 }
 
 .why-us h3 {
@@ -179,7 +179,7 @@ nav {
 }
 
 .what-we-do {
-    padding: 47px 215px 94px 215px;
+    padding: 47px 0px 94px 0px;
 }
 
 .what-we-do-list {
@@ -188,7 +188,7 @@ nav {
 }
 
 .our-command {
-    padding: 94px 215px 94px 215px;
+    padding: 94px 0px 94px 0px;
     background-color: #F5F4FA;
 }
 
