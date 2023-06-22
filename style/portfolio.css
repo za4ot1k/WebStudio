@@ -1,12 +1,13 @@
 body {
-    font-family: 'Roboto'
+    font-family: 'Roboto';
 }
                         /* HEADER  */
 
 .header-container {
-    width: 1600px;
+    width: 1200px;
     margin: auto;
-    padding: 25px 215px 25px 215px;
+    padding: 25px 0px 25px 0px;
+    outline: dashed red;
 }
 
 .logo {
@@ -89,13 +90,12 @@ nav {
 }
         /* main */
 
-.main-container {
-    width: 1600px;
-    margin: auto;
-}
 
-main {
-    margin: 94px 0px 94px 0px;
+
+.main-container {
+    width: 1200px;
+    margin: auto;
+    outline: dashed red;
 }
 
 .filters-button {
@@ -120,6 +120,18 @@ main {
     border-radius: 4px;
 }
 
+.button {
+    padding: 94px 0px 24px 0px;
+}
+
+.list-button {
+    display: flex;
+}
+
+.portfolio {
+    padding: 24px 0px 94px 0px ;
+}
+
 .portfolio-tittle {
     font-weight: 700;
     font-size: 18px;
@@ -139,15 +151,15 @@ main {
             /* footer */
 
 .footer-container {
-    width: 1600px;
+    width: 1200px;
     margin: auto;
+    outline: dashed red;
 }
 
 footer {
-    padding: 0;
+    outline: dashed red;
     background-color: #2F303A;
-    height: 252px;
-    
+    padding: 60px 0px 60px ;
 }
 
 
