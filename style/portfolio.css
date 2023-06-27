@@ -126,10 +126,17 @@ nav {
 
 .list-button {
     display: flex;
+    justify-content: center;
 }
 
 .portfolio {
     padding: 24px 0px 94px 0px ;
+}
+
+.list-articles-portfolio  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portfolio-tittle {
@@ -146,6 +153,10 @@ nav {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
+}
+
+.filters-button {
+    margin-left: 8px;
 }
 
             /* footer */

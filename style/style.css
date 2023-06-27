@@ -143,6 +143,11 @@ nav {
     color: #212121;
 }
 
+
+.why-us-list {
+    display: flex;
+}
+
 .why-us p{
     font-weight: 400;
     font-size: 14px;
