@@ -133,10 +133,17 @@ nav {
     padding: 24px 0px 94px 0px ;
 }
 
+.portfolio-item {
+    border: 1px solid #EEE;
+}
+
 .list-articles-portfolio  {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 .portfolio-tittle {
@@ -145,6 +152,7 @@ nav {
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    margin: 20px 24px 0px 24px;
 }
 
 .portfolio-discription {
@@ -153,6 +161,7 @@ nav {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
+    margin: 0px 24px 20px 24px;
 }
 
 .filters-button {
