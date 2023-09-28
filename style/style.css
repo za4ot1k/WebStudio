@@ -107,7 +107,7 @@ nav {
 
 .cap {
     padding: 200px 0px 200px 0px ;
-    background-image: url(./img/img-studio/hero-bg.jpg);
+    background-image: url(/img/img-studio/hero-bg.jpg);
 
 }
 
@@ -198,7 +198,7 @@ nav {
 }
 
 .why-us-item:nth-child(1)::before {
-    background-image: url(./img/img-studio/antenna.png);
+    background-image: url(./img/symbol-defs.svg#icon-astronaut);
 }
 
 .why-us-item:nth-child(2)::before {
