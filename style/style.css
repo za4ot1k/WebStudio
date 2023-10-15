@@ -143,6 +143,7 @@ nav {
     width: 12px;
     height: 10px;
     fill: #2F303A;
+    transition: .4s;
 }
 
 .info-svg2:hover {
@@ -422,7 +423,14 @@ nav {
 }
 
 .icon-link:focus{
-    display: block;
+    outline: none;
+    fill: #fff;
+    background-color: #2196F3;
+    transition: 1s;
+}
+
+.icon-link:focus .icons{
+    fill: #fff;
 }
 
 .icon-link:hover {
@@ -452,7 +460,9 @@ nav {
     justify-content: space-between;
 }
 
-.clients-list li {
+
+
+.clients-link {
     width: 170px;
     height: 92px;
     border-radius: 4px;
@@ -462,19 +472,28 @@ nav {
     align-items: center;
 }
 
-.clients-list li:hover {
+.clients-link:focus{
+    outline: none;
     border: 1px solid #2196F3; 
     transition: .4s;
 }
 
-.clients-list li:hover .clients-icon {
+.clients-link:focus .clients-icon {
     fill: #2196F3;
     transition: .4s;
 }
 
-.clients-list li:focus{
-    outline: solid 1px red;
+
+.clients-link:hover {
+    border: 1px solid #2196F3; 
+    transition: .4s;
 }
+
+.clients-link:hover .clients-icon {
+    fill: #2196F3;
+    transition: .4s;
+}
+
 
 .clients-icon {
     width: 106px;
@@ -574,6 +593,11 @@ footer {
     background-color: #2196F3;
 }
 
+.footer-part2 .icon-link:focus {
+    background-color: #2196F3;
+}
+
+
 
 .footer-sbmit-btn {
     display: flex;
@@ -656,42 +680,6 @@ footer {
 
 .footer-input:focus {
     outline: #000;
-}
-
-.icons-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 28px;
-
-}
-
-.icons {
-    fill: #AFB1B8;
-    width: 20px;
-    height: 20px;
-}
-
-.icons-list li {
-    width: 44px;
-    height: 44px;
-}
-
-.icon-link {
-    display: block;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.icons-list li:focus{
-    fill: #fff;
-    background-color: #2196F3;
-    transition: 1s;
 }
 
 .footer-sbmit-btn:focus {
