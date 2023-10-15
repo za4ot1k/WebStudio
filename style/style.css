@@ -274,9 +274,39 @@ nav {
     color: #212121;
 }
 
+.what-we-do-title2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.80);
+    bottom: 0px;
+    opacity: 0;
+}
+
 .what-we-do-item {
+    position: relative;
     height: 294px;
     width: 370px ;
+}
+
+.what-we-do-item:hover .title-box{
+    opacity: 1;
+    transition: .4s;
 }
 
 .why-us-item::before {
