@@ -197,8 +197,11 @@ nav {
 }
 
 .cap {
+
     padding: 200px 0px 200px 0px ;
     background-image: url(../img/img-studio/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
