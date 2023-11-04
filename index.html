@@ -421,20 +421,16 @@
         <section class="footer-part3">
           <h2 class="footer-subtitle">Підпишіться на розсилку</h2>
           <div class="footer-box">
-            <input
-              class="footer-input"
-              placeholder="E-mail"
-              type=""
-              name=""
-              id=""
-            />
-            <button class="footer-sbmit-btn" type="button">
-              <p class="btn-text">Підписатися</p>
-              <svg class="tg-icon">
-                <use href="./img/symbol-defs.svg#icon-icon-tg"></use>
-              </svg>
-            </button>
-          </div>
+            <form class="footer-box" type="sabmit">
+              <input class="footer-input" placeholder="E-mail" type="" name="" id=""/>
+              <button class="footer-sbmit-btn" type="submit">
+                <p class="btn-text">Підписатися</p>
+                <svg class="tg-icon">
+                  <use href="./img/symbol-defs.svg#icon-icon-tg"></use>
+                </svg>
+              </button>
+            </form>
+        </div>
         </section>
       </div>
     </footer>
@@ -453,40 +449,44 @@
                   Залиште свої дані, ми вам передзвонимо
                 </h2>
 
-                <form type="submit">
+                <form class="modal-form" type="submit">
                   <img class="input-icon" src="./img/person.svg" alt="">
                   <div class="input-container">
                     <label class="visually-hidden" for="name">Ім'я</label>
-                    <input class="modal-input" id="name" type="text" name="name">
+                    <input required class="modal-input" id="name" type="text" name="name">
                   </div>
                   
                   <img class="input-icon2" src="./img/phone.svg" alt="">
                   <div class="input-container">
                     <label class="visually-hidden" for="telephon-number">Телефон</label>
-                    <input class="modal-input" id="telephon-number" type="text" name="numberTeleohone">
+                    <input required class="modal-input" id="telephon-number" type="text" name="numberTeleohone">
                   </div>
                 
                   <img class="input-icon3" src="./img/mail.svg" alt="">
                   <div class="input-container">
                     <label class="visually-hidden" for="mail">Пошта</label>
-                    <input class="modal-input" id="mail" type="text" name="mail">  
+                    <input required class="modal-input" id="mail" type="text" name="mail">  
                   </div>
                 
                   
                   <div class="input-container">
                     <label class="visually-hidden" for="comentar">Коментар</label>
-                    <input class="modal-input4" id="comentar" type="text" placeholder="Введіть текст" name="">  
+                    <input required class="modal-input4" id="comentar" type="text" placeholder="Введіть текст" name="">  
                   </div>
 
                   <div class="modal-box">
-                      <input class="modal-checkbox" type="checkbox" name="" id="modal-check">
-                      <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal-conditions" href="#">Умови договору</a></span>
+                      <label for="modal-check" class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal-conditions" href="#">Умови договору</a></label>
+                      <span class="custom-checkbox ">
+                        <img class="custom-checkbox-img" src="./img/galochka.svg" alt="">
+                      </span>
+                      <input required class="modal-checkbox" type="checkbox" name="" id="modal-check">
+                  </div>
+                  <div class="button-box">
+                    <button class="modal-submitBtn" type="submit">Відправити</button>
                   </div>
                 </form>
 
-                <div class="button-box">
-                  <button class="modal-submitBtn" type="submit">Відправити</button>
-                </div>
+              
             </div>
         </div> 
     </div>
