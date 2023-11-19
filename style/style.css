@@ -21,8 +21,7 @@ header {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
-    
+    color: #2196F3;   
 }
 
 .logo:focus{
@@ -58,7 +57,8 @@ nav {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     top: 6px;
 }
@@ -86,7 +86,8 @@ nav {
     margin: 10px 0px 0px 0px;
     opacity: 0;
     transform: scale(0);
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     top: 15px;
     border-radius: 2px;
@@ -98,7 +99,8 @@ nav {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    transition: .4s;    
+    transition: .25s;    
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-link1:focus {
@@ -125,12 +127,14 @@ nav {
 
 .info-link1:hover .info-svg1 {
     fill: #2196F3;
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-link2:hover .info-svg2 {
     fill: #2196F3;
-    transition: .4s;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-box {
@@ -140,10 +144,11 @@ nav {
 }
 
 .info-svg2{
-    width: 12px;
-    height: 10px;
+    width: 10px;
+    height: 16px;
     fill: #2F303A;
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-svg2:hover {
@@ -151,10 +156,11 @@ nav {
 }
 
 .info-svg1{
-    width: 12px;
-    height: 10px;
+    width: 16px;
+    height: 12px;
     fill: #2F303A;
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-svg1:hover {
@@ -171,7 +177,8 @@ nav {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    transition: .4s;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-link2:hover{
@@ -197,12 +204,22 @@ nav {
 }
 
 .cap {
-
     padding: 200px 0px 200px 0px ;
     background-image: url(../img/img-studio/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -2;
+}
 
+.cap-overlay {
+    top: 72.39px;
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    background: rgba(47, 48, 58, 0.40);
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 0;
 }
 
 .cap-tittle {
@@ -213,7 +230,7 @@ nav {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    
+    z-index: 5;
 }
 
 .cap-button {
@@ -232,6 +249,12 @@ nav {
     letter-spacing: 0.06em;
     color: #FFFFFF; 
 
+}
+
+.cap-button:hover {
+    background-color: #F5F4FA;
+    color: #2196F3;
+    transition: .25s;
 }
 
 .cap-button:focus {
@@ -309,7 +332,8 @@ nav {
 
 .what-we-do-item:hover .title-box{
     opacity: 1;
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .why-us-item::before {
@@ -459,7 +483,8 @@ nav {
     outline: none;
     fill: #fff;
     background-color: #2196F3;
-    transition: 1s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:focus .icons{
@@ -469,7 +494,8 @@ nav {
 .icon-link:hover {
     fill: #fff;
     background-color: #2196F3;
-    transition: 1s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
         /* cliets */
@@ -508,23 +534,27 @@ nav {
 .clients-link:focus{
     outline: none;
     border: 1px solid #2196F3; 
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:focus .clients-icon {
     fill: #2196F3;
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .clients-link:hover {
     border: 1px solid #2196F3; 
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-icon {
     fill: #2196F3;
-    transition: .4s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -557,6 +587,7 @@ footer {
 
 
 .footer-address {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -565,7 +596,8 @@ footer {
 }
 
 .tel-link, .mail-link {
-    transition: .3s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -576,12 +608,14 @@ footer {
 .tel-link:focus {
     color: #2196F3;
     outline: none;
-    transition: .3s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-link:focus {
     color: #2196F3;
-    transition: .3s;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
 }
 
