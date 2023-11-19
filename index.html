@@ -67,15 +67,18 @@
       <!-- шапка -->
 
       <section class="cap">
-        <!-- <div class="cap-overlay"></div> -->
+        <div class="cap-overlay">
           <div class="main-container">
-            <h1 class="cap-tittle">
-              Ефективні рішення для <br />
-              вашого бізнесу
-            </h1>
-            <button data-modal-open class="cap-button" type="button">Замовити послугу</button>
-          </div>
 
+              <h1 class="cap-tittle">
+                Ефективні рішення для <br />
+                вашого бізнесу
+              </h1>
+              <button data-modal-open class="cap-button" type="button">Замовити послугу</button>
+           
+             
+          </div>
+        </div>
       </section>
 
       <!-- особливості -->
@@ -449,26 +452,29 @@
                 </h2>
 
                 <form class="modal-form" type="submit">
-                  <svg class="input-icon">
-                    <use href="./img/symbol-defs.svg#icon-person"></use>
-                  </svg>
-                  <div class="input-container">
+                 
+                  <div class="input-container1">
+                    <svg class="input-icon">
+                      <use href="./img/symbol-defs.svg#icon-person"></use>
+                    </svg>
                     <label class="visually-hidden" for="name">Ім'я</label>
                     <input required class="modal-input" id="name" type="text" name="name">
                   </div>
                   
-                  <svg class="input-icon2">
-                    <use href="./img/symbol-defs.svg#icon-phone"></use>
-                  </svg>
-                  <div class="input-container">
+                 
+                  <div class="input-container2">
+                    <svg class="input-icon2">
+                      <use href="./img/symbol-defs.svg#icon-phone"></use>
+                    </svg>
                     <label class="visually-hidden" for="telephon-number">Телефон</label>
                     <input required class="modal-input" id="telephon-number" type="text" name="numberTeleohone">
                   </div>
                 
-                  <svg class="input-icon3">
-                    <use href="./img/symbol-defs.svg#icon-mail"></use>
-                  </svg>
-                  <div class="input-container">
+                 
+                  <div class="input-container3">
+                    <svg class="input-icon3">
+                      <use href="./img/symbol-defs.svg#icon-mail"></use>
+                    </svg>
                     <label class="visually-hidden" for="mail">Пошта</label>
                     <input required class="modal-input" id="mail" type="text" name="mail">  
                   </div>
@@ -480,12 +486,19 @@
                   </div>
 
                   <div class="modal-box">
-                      <label for="modal-check" class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal-conditions" href="#">Умови договору</a></label>
-                      <span class="custom-checkbox ">
-                        <img class="custom-checkbox-img" src="./img/galochka.svg" alt="">
-                      </span>
-                      <input required class="modal-checkbox" type="checkbox" name="" id="modal-check">
+                    <input required class="modal-checkbox" type="checkbox" name="" id="modal-check">
+                    <div class="fake-chekbox">
+                      <img class="galochka" src="./img/galochka.svg" alt="">
+                    </div>
+                    <label for="modal-check" class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal-conditions" href="#">Умови договору</a></label>
+                      
+                      
                   </div>
+                  <!-- <div class="input-box">
+                        <input class="our-input" id="input" type="checkbox" name="" id="">
+                        <div class="fake-chekbox"></div>
+                        <label for="input">Our input</label>
+                      </div>   -->
                   <div class="button-box">
                     <button class="modal-submitBtn" type="submit">Відправити</button>
                   </div>

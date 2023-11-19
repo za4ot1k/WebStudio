@@ -25,11 +25,17 @@ header {
 }
 
 .logo:focus{
-    border: 1.5px solid #2196F3;
-    padding: 3px;
+    background-color: rgb(226, 226, 226);
+        outline: none;
+        border-radius: 5px;
+}
+
+footer  .logo:focus{
+    background-color: rgb(24, 24, 56);
     outline: none;
     border-radius: 5px;
 }
+    
 
 .logo2 {
     color: #000;
@@ -491,7 +497,7 @@ footer {
 }
 
 .footer-box {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     gap: 12px;
 }
@@ -529,6 +535,8 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: .25s;    
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input::placeholder {
@@ -597,8 +605,14 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-input:focus {
+    outline: #000;
+}
+
 .footer-sbmit-btn:focus {
     outline: none;
     border: 1.5px solid #fff;
+     transition: .25s;    
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
+    

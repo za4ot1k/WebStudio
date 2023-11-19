@@ -84,6 +84,43 @@
     letter-spacing: 0.6px;
 }
 
+.input-container1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+   
+}
+
+.input-container1:hover .input-icon {
+    fill: #2196F3;
+}
+
+.input-container2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+   
+}
+
+.input-container2:hover .input-icon2 {
+    fill: #2196F3;
+}
+
+.input-container3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+   
+}
+
+.input-container3:hover .input-icon3 {
+    fill: #2196F3;
+}
+
+
 .input-container {
     display: flex;
     flex-direction: column;
@@ -139,6 +176,8 @@
     left: 52px;
     top: 104px;
     z-index: 1;
+    transition: .25s ;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon2 {
@@ -148,6 +187,8 @@
     left: 52px;
     top: 176px;
     z-index: 1;
+    transition: .25s ;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon3{
@@ -157,10 +198,12 @@
     left: 52px;
     top: 248px;
     z-index: 1;
+    transition: .25s ;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-box {
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,26 +256,37 @@
     justify-content: center;
 }
 
-.custom-checkbox {
+.fake-chekbox {
     position: relative;
     /* background-color: #2196F3; */
-    width: 16px;
-    height: 15px;
+    width: 13px;
+    height: 12px;
     border: 2px solid #212121;
     border-radius: 2px;
 }
 
-.custom-checkbox-img {
-    width: 14px;
-    height: 13px;
+.galochka {
+    width: 13px;
+    height: 12px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    /* opacity: 0; */
 }
 
-.custom-checkbox:checked + .custom-checkbox-img {
+.modal-checkbox:checked + .fake-chekbox {
     background-color: #2196F3;
     opacity: 1;
+    border: none;
+    width: 16px;
+    height: 15px;
+}
+
+.modal-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
 }
