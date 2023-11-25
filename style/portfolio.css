@@ -262,7 +262,7 @@ nav {
     outline: 1px solid #EEE;
     display: block;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .portfolio-item:hover{
