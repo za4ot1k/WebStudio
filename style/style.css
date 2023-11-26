@@ -149,7 +149,7 @@ nav {
 .info-svg2{
     width: 10px;
     height: 16px;
-    fill: #2F303A;
+    fill: #757575;
     transition: .25s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -161,7 +161,7 @@ nav {
 .info-svg1{
     width: 16px;
     height: 12px;
-    fill: #2F303A;
+    fill: #757575;
     transition: .25s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -208,7 +208,7 @@ nav {
 
 .cap {
     margin: 0 auto;
-    width: 1600px;
+    max-width: 1600px;
     padding: 200px 0px 200px 0px ;
     background-image: url(../img/overlay.png),url(../img/img-studio/hero-bg.jpg);
     background-repeat: no-repeat;
