@@ -134,14 +134,10 @@ nav {
 
 .info-link1:hover .info-svg1 {
     fill: #2196F3;
-    transition: .25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-link2:hover .info-svg2 {
     fill: #2196F3;
-    transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-box {
@@ -211,12 +207,13 @@ nav {
 }
 
 .cap {
+    margin: 0 auto;
+    width: 1600px;
     padding: 200px 0px 200px 0px ;
-    background-image: url(../img/img-studio/hero-bg.jpg);
+    background-image: url(../img/overlay.png),url(../img/img-studio/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 1  ;
-    max-height: 600px;
+    background-size: cover;
 }
 
 .cap-tittle {
@@ -330,12 +327,12 @@ nav {
     position: relative;
     height: 294px;
     width: 370px ;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .what-we-do-item:hover .title-box{
     opacity: 1;
-    transition: .25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .why-us-item::before {
@@ -465,6 +462,8 @@ nav {
 .icons-list li {
     width: 44px;
     height: 44px;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -479,6 +478,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:focus{
@@ -531,6 +532,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:focus{

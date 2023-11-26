@@ -59,6 +59,8 @@
     align-items: center;
     width: 30px;
     height: 30px;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover .hrestyk{
@@ -91,6 +93,8 @@
     flex-direction: column;
     margin-left: 40px;
     margin-right: 40px;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
@@ -103,6 +107,8 @@
     flex-direction: column;
     margin-left: 40px;
     margin-right: 40px;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
@@ -115,6 +121,8 @@
     flex-direction: column;
     margin-left: 40px;
     margin-right: 40px;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
@@ -138,11 +146,48 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     height: 40px;
-    transition: .25s;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover,.modal-input:focus {
+.modal-input2 {
+    caret-color: #000;
+    position: relative;
+    padding-left: 42px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    height: 40px;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input3 {
+    caret-color: #000;
+    position: relative;
+    padding-left: 42px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    height: 40px;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:hover,.modal-input:focus,.modal-input2:hover,.modal-input2:focus,.modal-input3:hover,.modal-input3:focus {
     border: 1px solid #2196F3;
+}
+
+.modal-input:focus + .input-icon {
+    fill: #2196F3;
+}
+
+.modal-input2:focus + .input-icon2 {
+    fill: #2196F3;
+}
+
+.modal-input3:focus + .input-icon3 {
+    fill: #2196F3;
 }
 
 .modal-input4 {
@@ -153,7 +198,8 @@
     border: 1px solid rgba(33, 33, 33, 0.20);
     height: 40px;
     padding-bottom: 97.4px;
-    transition: .25s;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .modal-input4:hover,.modal-input4:focus {
@@ -225,6 +271,8 @@
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-conditions {
@@ -261,8 +309,8 @@
 .fake-chekbox {
     position: relative;
     /* background-color: #2196F3; */
-    width: 13px;
-    height: 12px;
+    width: 12px;
+    height: 11px;
     border: 2px solid #212121;
     border-radius: 2px;
 }
