@@ -252,6 +252,7 @@ nav {
     background-color: #F5F4FA;
     color: #2196F3;
     transition: .25s;
+    transform: scale(1.1);
 }
 
 .cap-button:focus {
@@ -321,6 +322,8 @@ nav {
     background: rgba(47, 48, 58, 0.80);
     bottom: 0px;
     opacity: 0;
+    transition:.25s;    
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .what-we-do-item {
