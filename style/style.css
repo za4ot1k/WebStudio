@@ -1,15 +1,24 @@
 body {
     font-family: 'Roboto';
+    padding-top: 72px;
 }
 
                         /* HEADER  */
 
 header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #FFF;
+    z-index: 3;
+    opacity: 0.9; 
     padding: 20px 0px 20px 0px;
     border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
+    
     width: 1200px;
     margin: auto;
     padding: 0px 15px 0px 15px;
@@ -423,6 +432,7 @@ nav {
     width: 270px;
     height: 428px;
 }
+
 
 .our-command-tittle {
     text-align: center;
