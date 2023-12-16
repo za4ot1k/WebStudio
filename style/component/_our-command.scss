@@ -1,0 +1,121 @@
+
+
+.our-command-list {
+    display: flex;
+    justify-content: center;
+    gap: 0px 30px;
+}
+
+.our-command-tittle-h3 {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    
+}
+
+
+
+
+.our-command-article {
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.our-command {
+    padding: 94px 0px 94px 0px;
+    background-color: #F5F4FA;
+}
+
+.our-command-article {
+    background-color: #fff;
+    width: 270px;
+    height: 428px;
+}
+
+
+.our-command-tittle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-top: 30px;
+}
+
+.our-command-img {
+    width: 270px;
+    height: 260px;
+}
+
+.our-command-discription {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-top: 10px;
+}
+
+.icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+
+}
+
+.icons {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+}
+
+.icons-list li {
+    width: 44px;
+    height: 44px;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.icons-list li:hover .icons{
+    fill: #fff;
+}
+
+.icon-link {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:focus{
+    outline: none;
+    fill: #fff;
+    background-color: #2196F3;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:focus .icons{
+    fill: #fff;
+}
+
+.icon-link:hover {
+    fill: #fff;
+    background-color: #2196F3;
+    transition: .25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ 
