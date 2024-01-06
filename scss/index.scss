@@ -1,13 +1,18 @@
-@import "./base/common.scss";
-@import "./base/reset.scss";
-@import "./component/header.scss";
-@import "./component/cap.scss";
-@import "./component/why-us.scss";
-@import "./component/what-we-do";
-@import "./component/our-command";
-@import "./component/clients";
-@import "./component/footer";
-@import "./component/modal.scss";
+@import "./base/common";
+@import "./base/reset";
+
+@import "./partials/header";
+@import "./partials/cap";
+@import "./partials/why-us";
+@import "./partials/what-we-do";
+@import "./partials/our-command";
+@import "./partials/clients";
+@import "./partials/footer";
+@import "./partials/modal";
+
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 
 

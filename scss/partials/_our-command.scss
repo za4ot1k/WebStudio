@@ -1,0 +1,118 @@
+.command {
+    padding: 94px 0px 94px 0px;
+    background-color: #F5F4FA;
+
+    &__heading {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $second-color;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 0px 30px;
+    }
+
+    &__article {
+        background-color: #fff;
+        width: 270px;
+        height: 428px;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &__tittle {
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        color: $second-color;
+        margin-top: 30px;
+    }
+
+    &__img {
+        width: 270px;
+        height: 260px;
+    }
+        
+    &__discription {
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        color: #757575;
+        margin-top: 10px;
+    }
+
+    
+    &__icons-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 28px;
+    }
+
+    
+    &__icons {
+        fill: #AFB1B8;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__icons-list li {
+        width: 44px;
+        height: 44px;
+        transition:.25s;
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__icons-list li:hover &__icons{
+        fill: #fff;
+    }
+
+    &__icon-link{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:.25s;
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__icon-link:focus{
+        outline: none;
+        fill: #fff;
+        background-color: $main-color;
+        transition: .25s;
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__icon-link:focus &__icons{
+        fill: #fff;
+    }
+
+    
+    &__icon-link:hover {
+        fill: #fff;
+        background-color: $main-color;
+        transition: .25s;
+        transition-timing-function: $transition-timing-function;
+    }
+}
+
+
+
+
+
+
+
+
+
+ 

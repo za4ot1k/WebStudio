@@ -1,0 +1,284 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+    display: flex;
+
+    & &__logo:focus {
+        background-color: rgb(24, 24, 56);
+        outline: none;
+        border-radius: 5px;
+    }
+
+    &__logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: $main-color;   
+        transition: .25s;    
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__logo2 {
+        color: #fff;
+    }
+
+    &__address  {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link2, &__link1 {
+        transition: .25s;
+        transition-timing-function: $transition-timing-function;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__link1:focus {
+        color: $main-color;
+        outline: none;
+        transition: .25s;
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__link2:focus {
+        color: $main-color;
+        transition: .25s;
+        transition-timing-function: $transition-timing-function;
+        outline: none;
+    }
+
+    &__part2 {
+        margin-left: 70px;
+    }
+
+    &__part2 &__icons-list {
+        margin-top: 20px;
+    }
+
+    &__title {
+        color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    }
+
+    &__part2 &__icons  {
+        fill: #fff;
+    }
+
+    &__part2 &__link {
+        background-color: rgba(255, 255, 255, 0.10);
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__part2 &__link:hover {
+        background-color: $main-color;
+    }
+
+    &__part2 &__link:focus  {
+        background-color: $main-color;
+    }
+
+    &__icons-list  {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 28px;
+    
+    }
+
+    &__icons {
+        fill: #AFB1B8;
+        width: 20px;
+        height: 20px;
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__icons-list li {
+        width: 44px;
+        height: 44px;
+        transition:.25s;
+        transition-timing-function: $transition-timing-function;
+    }
+
+    
+    &__icons-list li:hover &__icons{
+        fill: #fff;
+    }
+
+    &__link {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:.25s;
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__link:focus{
+        outline: none;
+        fill: #fff;
+        background-color: $main-color;
+        transition: .25s;
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__link:focus &__icons{
+       fill: #fff;
+    }
+
+    &__link:hover {
+        fill: #fff;
+        background-color: $main-color;
+        transition: .25s;
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__part3 {
+        margin-left: 93px;
+    }
+
+    &__subtitle {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+
+    &__box {
+        margin-top: 10px;
+        display: flex;
+        gap: 12px;
+    }
+
+    &__input {
+        padding-left: 16px;
+        color: rgba(255, 255, 255, 0.60);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 125% */
+        letter-spacing: 0.48px;
+        width: 358px;
+        height: 46.86px;
+        outline: none;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        transition: .25s;    
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__input::placeholder {
+        color: rgba(255, 255, 255, 0.60);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 125% */
+        letter-spacing: 0.48px;
+    }
+
+    
+    &__input:focus {
+        outline: #000;
+    }
+    
+    &__sbmit-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        background: $main-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        transition: .25s;    
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__sbmit-btn:focus {
+        outline: none;
+        border: 1.5px solid #fff;
+        transition: .25s;    
+        transition-timing-function: $transition-timing-function;
+    }
+
+    &__btn-text {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: 0.96px;
+    }    
+
+    &__tg-icon {
+        fill: #FFF;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

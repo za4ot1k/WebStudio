@@ -1,5 +1,12 @@
-@import "./base/common.scss";
-@import "./base/reset.scss";
-@import "./component/header.scss";
-@import "./portfolio-component/portfolio";
-@import "./component/footer.scss"
+@import "./base/common";
+@import "./base/reset";
+
+@import "./partials/header";
+@import "./portfolio-partials/portfolio";
+@import "./portfolio-partials/buttons";
+@import "./partials/footer";
+
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+

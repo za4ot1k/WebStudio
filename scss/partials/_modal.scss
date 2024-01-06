@@ -14,7 +14,7 @@
 
   .backdrop {
     transition-duration: .25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
     position: fixed;
     top: 0;
     left: 0;
@@ -60,11 +60,11 @@
     width: 30px;
     height: 30px;
     transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
 }
 
 .modal-close:hover .hrestyk{
-    fill: #2196F3;
+    fill: $main-color;
 }
 
 
@@ -79,7 +79,7 @@
     max-width: 448px;
     text-align: center;
     margin-left: 25px;
-    color: #212121;
+    color: $second-color;
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
@@ -94,12 +94,12 @@
     margin-left: 40px;
     margin-right: 40px;
     transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
    
 }
 
 .input-container1:hover .input-icon {
-    fill: #2196F3;
+    fill: $main-color;
 }
 
 .input-container2 {
@@ -108,12 +108,12 @@
     margin-left: 40px;
     margin-right: 40px;
     transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
    
 }
 
 .input-container2:hover .input-icon2 {
-    fill: #2196F3;
+    fill: $main-color;
 }
 
 .input-container3 {
@@ -122,12 +122,12 @@
     margin-left: 40px;
     margin-right: 40px;
     transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
    
 }
 
 .input-container3:hover .input-icon3 {
-    fill: #2196F3;
+    fill: $main-color;
 }
 
 
@@ -147,7 +147,7 @@
     border: 1px solid rgba(33, 33, 33, 0.20);
     height: 40px;
     transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
 }
 
 .modal-input2 {
@@ -159,7 +159,7 @@
     border: 1px solid rgba(33, 33, 33, 0.20);
     height: 40px;
     transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
 }
 
 .modal-input3 {
@@ -171,23 +171,23 @@
     border: 1px solid rgba(33, 33, 33, 0.20);
     height: 40px;
     transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
 }
 
 .modal-input:hover,.modal-input:focus,.modal-input2:hover,.modal-input2:focus,.modal-input3:hover,.modal-input3:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid $main-color;
 }
 
 .modal-input:focus + .input-icon {
-    fill: #2196F3;
+    fill: $main-color;
 }
 
 .modal-input2:focus + .input-icon2 {
-    fill: #2196F3;
+    fill: $main-color;
 }
 
 .modal-input3:focus + .input-icon3 {
-    fill: #2196F3;
+    fill: $main-color;
 }
 
 .modal-input4 {
@@ -199,11 +199,11 @@
     height: 40px;
     padding-bottom: 97.4px;
     transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
 } 
 
 .modal-input4:hover,.modal-input4:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid $main-color;
 }
 
 .visually-hidden {
@@ -225,7 +225,7 @@
     top: 104px;
     z-index: 1;
     transition: .25s ;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
 }
 
 .input-icon2 {
@@ -236,7 +236,7 @@
     top: 176px;
     z-index: 1;
     transition: .25s ;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
 }
 
 .input-icon3{
@@ -247,7 +247,7 @@
     top: 248px;
     z-index: 1;
     transition: .25s ;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
 }
 
 .modal-box {
@@ -272,11 +272,11 @@
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
     transition:.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transition-timing-function;
 }
 
 .modal-conditions {
-    color: #2196F3;
+    color: $main-color;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -297,7 +297,7 @@
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: #2196F3;
+    background: $main-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -308,10 +308,10 @@
 
 .fake-chekbox {
     position: relative;
-    /* background-color: #2196F3; */
+    /* background-color: $main-color; */
     width: 12px;
     height: 11px;
-    border: 2px solid #212121;
+    border: 2px solid $second-color;
     border-radius: 2px;
 }
 
@@ -326,7 +326,7 @@
 }
 
 .modal-checkbox:checked + .fake-chekbox {
-    background-color: #2196F3;
+    background-color: $main-color;
     opacity: 1;
     border: none;
     width: 16px;
