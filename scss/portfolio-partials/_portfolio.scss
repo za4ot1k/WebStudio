@@ -94,11 +94,11 @@
     
 }
 
-.portfolio__item:hover .overlay{
+.portfolio__item:hover .portfolio__overlay{
     transform: translatex(0);
 }
 
-.portfolio__article:focus .overlay{
+.portfolio__article:focus .portfolio__overlay{
     transform: translatex(0);
 
 }

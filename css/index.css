@@ -319,9 +319,6 @@ button {
   text-transform: uppercase;
 }
 .offers__title-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   width: 370px;
   height: 70px;
@@ -417,9 +414,6 @@ button {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -461,9 +455,6 @@ button {
   height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -573,9 +564,6 @@ button {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer__part2 .footer__link:hover {
   background-color: #2196f3;
@@ -608,9 +596,6 @@ button {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -689,9 +674,6 @@ button {
   outline: #000;
 }
 .footer__sbmit-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border: none;
   width: 200px;
@@ -778,9 +760,6 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   transition: 0.25s;
@@ -970,10 +949,6 @@ button {
 }
 
 .modal-box {
-  /* flex-direction: row-reverse; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 8px;
   margin-top: 25px;
 }
@@ -1057,4 +1032,10 @@ button {
   top: 0;
   left: 0;
   opacity: 0;
+}
+
+.offers__title-box, .command__icon-link, .clients__link, .footer__part2 .footer__link, .footer__link, .footer__sbmit-btn, .modal-close, .modal-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */

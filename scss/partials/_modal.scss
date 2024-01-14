@@ -54,9 +54,7 @@
     border: 1px solid rgba(0, 0, 0, 0.10);
     background-color: #fff;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flexcenter;
     width: 30px;
     height: 30px;
     transition:.25s;
@@ -251,10 +249,7 @@
 }
 
 .modal-box {
-    /* flex-direction: row-reverse; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flexcenter;
     gap: 8px;
     margin-top: 25px;
 }

@@ -89,9 +89,7 @@
         border-radius: 50%;
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  @extend %flexcenter;
     }
 
     &__part2 &__link:hover {
@@ -133,9 +131,7 @@
         border-radius: 50%;
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flexcenter;
         transition:.25s;
         transition-timing-function: $transition-timing-function;
     }
@@ -216,9 +212,7 @@
     }
     
     &__sbmit-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  @extend %flexcenter;
         gap: 10px;
         border: none;
         width: 200px;

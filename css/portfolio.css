@@ -209,7 +209,6 @@ button {
   position: relative;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* overflow: hidden; */
 }
 
 .portfolio__item:hover {
@@ -284,11 +283,11 @@ button {
   right: 0;
 }
 
-.portfolio__item:hover .overlay {
+.portfolio__item:hover .portfolio__overlay {
   transform: translatex(0);
 }
 
-.portfolio__article:focus .overlay {
+.portfolio__article:focus .portfolio__overlay {
   transform: translatex(0);
 }
 
@@ -430,9 +429,6 @@ button {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer__part2 .footer__link:hover {
   background-color: #2196f3;
@@ -465,9 +461,6 @@ button {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -546,9 +539,6 @@ button {
   outline: #000;
 }
 .footer__sbmit-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border: none;
   width: 200px;
@@ -579,4 +569,10 @@ button {
   fill: #FFF;
   width: 24px;
   height: 24px;
+}
+
+.footer__part2 .footer__link, .footer__link, .footer__sbmit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=portfolio.css.map */

@@ -30,9 +30,7 @@
     }
 
     &__title-box{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flexcenter;
         position: absolute;
         width: 370px;
         height: 70px;
