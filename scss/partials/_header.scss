@@ -22,6 +22,27 @@
         transition-timing-function: $transition-timing-function;
     }
 
+    &__button-menu {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: 25px;
+
+        @media screen and (min-width: 768px ) {
+            display: none;
+        }
+        
+    }
+
+    &__img-menu {
+        width: 40px;
+        height: 40px;
+    }
+
     
     &__logo:focus{
         background-color: rgb(226, 226, 226);
@@ -36,13 +57,25 @@
     &__nav {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+
+      
     }
 
     &__list-menu {
         align-items: center;
-        display: flex;
-        margin-left: 95px;
+        display: none ;
         gap: 52px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 50px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            gap: 52px;
+            margin-left: 95px;
+        }
     }
 
     &__link {
@@ -95,6 +128,20 @@
         letter-spacing: 0.28px;
         transition: .25s;    
         transition-timing-function: $transition-timing-function;
+
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            color: #757575;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.28px;
+            transition: .25s;    
+            transition-timing-function: $transition-timing-function;
+        }
     }
 
     &__link-info1:focus {
@@ -131,6 +178,15 @@
         display: flex;
         align-items: center;
         gap: 10px;
+
+        
+        @media screen and (min-width: 768px) {
+            gap: 8px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            gap: 10px;
+        }
     }
 
     &__svg2{
@@ -169,6 +225,21 @@
         letter-spacing: 0.28px;
         transition:.25s;
         transition-timing-function: $transition-timing-function;
+
+        
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            color: #757575;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.28px;
+            transition: .25s;    
+            transition-timing-function: $transition-timing-function;
+        }
     }
 
     &__link-info2:hover{
@@ -176,9 +247,20 @@
     }
 
     &__list-info {
-        display: flex;
+        display: none;
         gap: 30px ;
-        margin-left: 315px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px ;
+        }
+
+        @media screen and (min-width: 1200px) {
+              display: flex;
+              flex-direction: row;
+              gap: 30px ;
+        }
     }
 }
 
