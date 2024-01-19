@@ -1,6 +1,10 @@
 
 .advantages {
-    padding: 94px 0px 47px 0px;
+    padding: 60px 0px 60px 0px;
+
+    @media screen and (min-width:1200px) {
+        padding: 94px 0px 47px 0px;
+    }
 
     &__tittle {
         font-weight: 700;
@@ -9,13 +13,24 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $second-color;
+        text-align: center;
+
+        @media screen and (min-width:768px) {
+            text-align: left;
+        }
     }
     
     
     &__list {
         display: flex;
+        flex-direction: column;
         gap: 30px;
         justify-content: center;
+        flex-wrap: wrap;
+
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+        }
     }
     
     &__discription{
@@ -55,6 +70,20 @@
     
     &__item:nth-child(4)::before {
         background-image: url(../img/astronaut.svg);
+    }
+
+    &__item {
+        
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+            
+        }
+
+          @media screen and (min-width:1200px) {
+            width: 270px;
+            
+        }
     }
     
     

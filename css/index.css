@@ -1,34 +1,32 @@
 .container {
-  width: 100%;
-  margin: auto;
+  max-width: 480px;
+  margin: 0 auto;
   padding: 0px 15px 0px 15px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 1200px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1170px;
+    max-width: 1200px;
   }
 }
 
 footer .container {
-  width: 1200px;
-  margin: auto;
   display: flex;
   padding: 0px 15px 0px 15px;
 }
 
 body {
   font-family: "Roboto";
-  padding-top: 72px;
+  padding-top: 80px;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    padding-top: 72px;
+  }
 }
 
 ol, ul {
@@ -78,7 +76,6 @@ button {
   border: none;
   background-color: transparent;
   margin-left: auto;
-  margin-right: 25px;
 }
 @media screen and (min-width: 768px) {
   .header__button-menu {
@@ -291,17 +288,22 @@ button {
 }
 
 .cap {
+  padding: 118px 0px 118px 0px;
   margin: 0 auto;
   max-width: 1600px;
-  padding: 200px 0px 200px 0px;
   background-image: url(../img/overlay.png), url(../img/img-studio/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .cap {
+    padding: 200px 0px 200px 0px;
+  }
+}
 .cap__tittle {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -309,28 +311,16 @@ button {
   color: #FFFFFF;
   z-index: 9999;
 }
-@media screen and (min-width: 320px) {
-  .cap__tittle {
-    font-size: 26px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .cap__tittle {
-    font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    z-index: 9999;
   }
 }
 .cap__button {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  width: 216px;
+  width: 200px;
   height: 50px;
   border: #2196f3;
   background: #2196f3;
@@ -345,34 +335,10 @@ button {
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) {
-  .cap__button {
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 200px;
-    height: 50px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .cap__button {
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
     width: 216px;
     height: 50px;
-    border: #2196f3;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    z-index: 9999;
-    transition: 0.25s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .cap__button:hover {
@@ -389,7 +355,12 @@ button {
 }
 
 .advantages {
-  padding: 94px 0px 47px 0px;
+  padding: 60px 0px 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding: 94px 0px 47px 0px;
+  }
 }
 .advantages__tittle {
   font-weight: 700;
@@ -398,11 +369,24 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .advantages__tittle {
+    text-align: left;
+  }
 }
 .advantages__list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    flex-direction: row;
+  }
 }
 .advantages__discription {
   margin-top: 10px;
@@ -436,6 +420,16 @@ button {
 }
 .advantages__item:nth-child(4)::before {
   background-image: url(../img/astronaut.svg);
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    width: 270px;
+  }
 }
 
 .offers {
