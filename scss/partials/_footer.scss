@@ -11,6 +11,8 @@
     }
 
     &__logo {
+        display: flex;
+        justify-content: center;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -19,6 +21,11 @@
         color: $main-color;   
         transition: .25s;    
         transition-timing-function: $transition-timing-function;
+
+        @media screen and (min-width:1200px) {
+            display: block;
+            
+        }
     }
 
     &__logo2 {
@@ -26,12 +33,20 @@
     }
 
     &__address  {
+        margin-top: 20px;
+        text-align: center;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 200;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #FFFFFF;
+        opacity: 0.9;
+
+        @media screen and (min-width:1200px) {
+           text-align: end;
+            
+        }
     }
 
     &__list {
@@ -40,6 +55,9 @@
     }
 
     &__link2, &__link1 {
+        margin-top: 8px;
+        display: block;
+        text-align: center;
         transition: .25s;
         transition-timing-function: $transition-timing-function;
         font-weight: 400;
@@ -47,6 +65,10 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
     }
 
     &__link1:focus {
@@ -64,7 +86,16 @@
     }
 
     &__part2 {
-        margin-left: 70px;
+        margin-top: 60px;
+
+        @media screen and (min-width:768px) {
+            margin-top: 0;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-left: 70px;
+            margin-top: 0;
+        }
     }
 
     &__part2 &__icons-list {
@@ -72,12 +103,17 @@
     }
 
     &__title {
+        text-align: center;
         color: #FFF;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+
+        @media screen and (min-width:1200px) {
+            text-align: start;
+        }
     }
 
     &__part2 &__icons  {
@@ -156,10 +192,16 @@
     }
 
     &__part3 {
-        margin-left: 93px;
+        margin-top: 60px;
+
+        @media screen and (min-width:1200px) {
+            margin-top: 0;
+            margin-left: 93px; 
+        }
     }
 
     &__subtitle {
+        margin-bottom: 20px;
         color: #FFF;
         font-family: Roboto;
         font-size: 14px;
@@ -168,15 +210,30 @@
         line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+        text-align: center;
+
+        @media screen and (min-width:1200px) {
+            text-align: start;
+        }
     }
 
     &__box {
         margin-top: 10px;
-        display: flex;
-        gap: 12px;
+        display: block;
+        justify-content: center;
+
+        @media screen and (min-width:1200px){
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
     }
 
     &__input {
+        display: block;
+        margin: 0 auto;
+
+
         padding-left: 16px;
         color: rgba(255, 255, 255, 0.60);
         font-family: Roboto;
@@ -194,6 +251,11 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         transition: .25s;    
         transition-timing-function: $transition-timing-function;
+
+        @media screen and (min-width:1200px) {
+            display: block;
+            margin: auto;
+        }
     }
 
     &__input::placeholder {
@@ -212,7 +274,9 @@
     }
     
     &__sbmit-btn {
-  @extend %flexcenter;
+        display: block;
+        margin: 20px auto 0px auto;
+        @extend %flexcenter;
         gap: 10px;
         border: none;
         width: 200px;
@@ -222,6 +286,11 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         transition: .25s;    
         transition-timing-function: $transition-timing-function;
+
+        @media screen and (min-width:1200px) {
+            display: block;
+            margin: auto;
+        }
     }
 
     &__sbmit-btn:focus {
@@ -247,6 +316,31 @@
         width: 24px;
         height: 24px;
     }
+
+    & .container{
+        display: block;
+        
+        @media screen and (min-width: 768px) {
+            width: 70%;
+        } 
+
+        @media screen and (min-width:1200px) {
+            display: flex;
+            width: 1200px;
+        }
+
+
+    }
+
+    &__adaptive-box {
+        display: block;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
 }
 
 

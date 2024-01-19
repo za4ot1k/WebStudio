@@ -1,6 +1,10 @@
 .command {
-    padding: 94px 0px 94px 0px;
+    padding: 60px 0px 60px 0px;
     background-color: #F5F4FA;
+
+    @media screen and (min-width:1200px){
+        padding: 94px 0px 94px 0px;
+    }
 
     &__heading {
         margin-bottom: 50px;
@@ -15,7 +19,8 @@
     &__list {
         display: flex;
         justify-content: center;
-        gap: 0px 30px;
+        flex-wrap: wrap;
+        gap: 30px 30px;
     }
 
     &__article {

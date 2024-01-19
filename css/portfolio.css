@@ -14,11 +14,6 @@
   }
 }
 
-footer .container {
-  display: flex;
-  padding: 0px 15px 0px 15px;
-}
-
 body {
   font-family: "Roboto";
   padding-top: 80px;
@@ -460,6 +455,8 @@ button {
   border-radius: 5px;
 }
 .footer__logo {
+  display: flex;
+  justify-content: center;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -469,22 +466,38 @@ button {
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    display: block;
+  }
+}
 .footer__logo2 {
   color: #fff;
 }
 .footer__address {
+  margin-top: 20px;
+  text-align: center;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  opacity: 0.9;
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    text-align: end;
+  }
 }
 .footer__list {
   margin: 0;
   padding: 0;
 }
 .footer__link2, .footer__link1 {
+  margin-top: 8px;
+  display: block;
+  text-align: center;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 400;
@@ -492,6 +505,11 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .footer__link2, .footer__link1 {
+    text-align: left;
+  }
 }
 .footer__link1:focus {
   color: #2196f3;
@@ -506,18 +524,35 @@ button {
   outline: none;
 }
 .footer__part2 {
-  margin-left: 70px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__part2 {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__part2 {
+    margin-left: 70px;
+    margin-top: 0;
+  }
 }
 .footer__part2 .footer__icons-list {
   margin-top: 20px;
 }
 .footer__title {
+  text-align: center;
   color: #FFF;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: start;
+  }
 }
 .footer__part2 .footer__icons {
   fill: #fff;
@@ -579,9 +614,16 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__part3 {
-  margin-left: 93px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__part3 {
+    margin-top: 0;
+    margin-left: 93px;
+  }
 }
 .footer__subtitle {
+  margin-bottom: 20px;
   color: #FFF;
   font-family: Roboto;
   font-size: 14px;
@@ -590,13 +632,28 @@ button {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__subtitle {
+    text-align: start;
+  }
 }
 .footer__box {
   margin-top: 10px;
-  display: flex;
-  gap: 12px;
+  display: block;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 }
 .footer__input {
+  display: block;
+  margin: 0 auto;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
@@ -614,6 +671,12 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    display: block;
+    margin: auto;
+  }
 }
 .footer__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -637,6 +700,8 @@ button {
   outline: #000;
 }
 .footer__sbmit-btn {
+  display: block;
+  margin: 20px auto 0px auto;
   gap: 10px;
   border: none;
   width: 200px;
@@ -646,6 +711,12 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .footer__sbmit-btn {
+    display: block;
+    margin: auto;
+  }
 }
 .footer__sbmit-btn:focus {
   outline: none;
@@ -667,6 +738,29 @@ button {
   fill: #FFF;
   width: 24px;
   height: 24px;
+}
+.footer .container {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    width: 1200px;
+  }
+}
+.footer__adaptive-box {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .footer__adaptive-box {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__part2 .footer__link, .footer__link, .footer__sbmit-btn {
