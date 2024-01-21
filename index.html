@@ -19,7 +19,7 @@
       <div class="container">
         <nav class="header__nav">
           <a class="header__logo" href="../">Web<span class="header__logo2">Studio</span></a>
-          <button class="header__button-menu" type="button">
+          <button data-menu-open class="header__button-menu" type="button">
             <svg class="header__img-menu">
               <use href="./img/symbol-defs.svg#icon-header-menu"></use>
             </svg>
@@ -148,7 +148,7 @@
           <ul class="command__list">
             <li class="command__item">
               <article class="command__article">
-                <img class="command__img" src="./img/img-studio/boy1.jpg" alt="boy1" />
+                <img class="command__img" src="./img/img-studio/boy4.jpg" alt="boy1" />
                 <h3 class="command__tittle">Ігор Дем'яненко</h3>
                 <p class="command__discription">Product Designer</p>
                 <ul class="command__icons-list">
@@ -185,7 +185,7 @@
             </li>
             <li>
               <article class="command__article">
-                <img class="command__img" src="./img/img-studio/boy2.jpg" alt="boy2" />
+                <img class="command__img" src="./img/img-studio/boy3.jpg" alt="boy2" />
                 <h3 class="command__tittle">Ольга Рєпіна</h3>
                 <p class="command__discription">Frontend Developer</p>
                 <ul class="command__icons-list">
@@ -222,7 +222,7 @@
             </li>
             <li>
               <article class="command__article">
-                <img class="command__img" src="./img/img-studio/boy3.jpg" alt="boy3" />
+                <img class="command__img" src="./img/img-studio/boy1.jpg             " alt="boy3" />
                 <h3 class="command__tittle">Микола Тарасов</h3>
                 <p class="command__discription">Marketing</p>
                 <ul class="command__icons-list">
@@ -259,7 +259,7 @@
             </li>
             <li>
               <article class="command__article">
-                <img class="command__img" src="./img/img-studio/boy4.jpg" alt="boy4" />
+                <img class="command__img" src="./img/img-studio/boy2.jpg" alt="boy4" />
                 <h3 class="command__tittle">Михайло Єрмаков</h3>
                 <p class="command__discription">UI Designer</p>
                 <ul class="command__icons-list">
@@ -470,11 +470,6 @@
             <label for="modal-check" class="checkbox-text">Погоджуюся з розсилкою та приймаю
               <a class="modal-conditions" href="#">Умови договору</a></label>
           </div>
-          <div class="input-box">
-            <input class="our-input" id="input" type="checkbox" name="" id="">
-            <div class="fake-chekbox"></div>
-            <label for="input">Our input</label>
-          </div>  
           <div class="button-box">
             <button class="modal-submitBtn" type="submit">Відправити</button>
           </div>
@@ -482,13 +477,70 @@
       </div>
     </div>
 
+
+    
+    <div data-menu class="menu is-hidden" >
+      <button data-menu-close type="button" class="menu__btn">
+        <svg class="menu__hrestyk">
+          <use href="./img/symbol-defs.svg#icon-menu-hrestyk"></use>
+        </svg>
+      </button>
+      <ul class="menu__list-menu">
+        <li class="menu__item">
+          <a class="menu__link" href="./index.html">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <ul class="menu__list-info">
+        <li class="menu__item">
+          <a class="menu__link-info1" href="mailto:info@devstudio.com">
+              <p>info@devstudio.com</p>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link-info2" href="tel:+380961111111">
+              <p>+38 096 111 11 11</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu__links-list">
+        <li class="menu__links-item">
+          <a href="#" class="menu__link2">
+            Instagram
+          </a>
+        </li>
+        <li class="menu__links-item">
+          <a href="#" class="menu__link2">
+            Twitter
+          </a>
+        </li>
+        <li class="menu__links-item">
+          <a href="#" class="menu__link2">
+            Facebook
+          </a>
+        </li>
+        <li class="menu__links-item">
+          <a href="#" class="menu__link2">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+     </div>
+
     
 
     <script src="./modal.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./menu.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script> -->
+    </script>
   </body>
 </html>
 

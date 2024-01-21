@@ -1,0 +1,92 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 15px 48px 40px;
+    background-color: #fff;
+    z-index: 10;
+
+    &__hrestyk {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    &__btn{
+        display: block;
+        margin-left: auto;
+        background-color: #fff;
+        outline: none;
+        border: none;
+
+    }
+
+    &__list-menu {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    &__link {
+        color: #212121;
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.8px;
+    }
+
+    &__link-info1 {
+        display: block;
+        margin-top: 302px;
+        color: #2196F3;
+        font-family: Roboto;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.68px;
+    }
+
+    &__link-info2 {
+        display: block  ;
+        margin-top: 32px;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+    } 
+
+    &__link:hover,
+    &__link:focus {
+        color: #2196F3;
+    }
+
+    &__link2 {
+        color: #2196F3;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 122.222% */
+        letter-spacing: 0.36px;
+    }
+
+    &__links-list {
+        display: flex;
+        margin-top: 64px;
+        gap: 20px;
+    }
+    
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}

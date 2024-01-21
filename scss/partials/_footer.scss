@@ -232,7 +232,7 @@
     &__input {
         display: block;
         margin: 0 auto;
-
+        max-width: 100% ;
 
         padding-left: 16px;
         color: rgba(255, 255, 255, 0.60);
@@ -242,7 +242,7 @@
         font-weight: 400;
         line-height: 20px; /* 125% */
         letter-spacing: 0.48px;
-        width: 358px;
+
         height: 46.86px;
         outline: none;
         border-radius: 4px;
@@ -255,6 +255,7 @@
         @media screen and (min-width:1200px) {
             display: block;
             margin: auto;
+            width: 358px;
         }
     }
 

@@ -19,6 +19,11 @@
     <div class="container">
       <nav class="header__nav">
         <a class="header__logo" href="../">Web<span class="header__logo2">Studio</span></a>
+        <button data-menu-open class="header__button-menu" type="button">
+          <svg class="header__img-menu">
+            <use href="./img/symbol-defs.svg#icon-header-menu"></use>
+          </svg>
+        </button>
         <ul class="header__list-menu">
           <li class="header__item">
             <a class="header__link" href="./index.html">Студія</a>
@@ -79,6 +84,7 @@
         </section>
         <section class="portfolio">
             <div class="container">
+              <div class="portfolio__box">
                 <ul class="portfolio__list">
                     <li class="portfolio__item">
                         <a href="#" class="portfolio__article">
@@ -214,6 +220,7 @@
                         </a>
                     </li>
                 </ul>
+              </div>
             </div>
         </section>
     </main>
@@ -288,6 +295,65 @@
         </section>
       </div>
     </footer>
+
+
+
+    <div data-menu class="menu is-hidden" >
+      <button data-menu-close type="button" class="menu__btn">
+        <svg class="menu__hrestyk">
+          <use href="./img/symbol-defs.svg#icon-menu-hrestyk"></use>
+        </svg>
+      </button>
+      <ul class="menu__list-menu">
+        <li class="menu__item">
+          <a class="menu__link" href="./index.html">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <ul class="menu__list-info">
+        <li class="menu__item">
+          <a class="menu__link-info1" href="mailto:info@devstudio.com">
+              <p>info@devstudio.com</p>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link-info2" href="tel:+380961111111">
+              <p>+38 096 111 11 11</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu__links-list">
+        <li class="menu__links-item">
+          <a href="#" class="menu__link2">
+            Instagram
+          </a>
+        </li>
+        <li class="menu__links-item">
+          <a href="#" class="menu__link2">
+            Twitter
+          </a>
+        </li>
+        <li class="menu__links-item">
+          <a href="#" class="menu__link2">
+            Facebook
+          </a>
+        </li>
+        <li class="menu__links-item">
+          <a href="#" class="menu__link2">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+     </div>
+
+
+
+    <script src="./menu.js"></script>
 </body>
 
 </html>

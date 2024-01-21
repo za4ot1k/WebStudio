@@ -1,6 +1,9 @@
 @import "./base/common";
 @import "./base/reset";
 
+@import "./partials/menu";
+
+
 @import "./partials/header";
 @import "./partials/cap";
 @import "./partials/why-us";
@@ -9,6 +12,7 @@
 @import "./partials/clients";
 @import "./partials/footer";
 @import "./partials/modal";
+
 
 @import "./utils/variables";
 @import "./utils/placeholders";
