@@ -326,16 +326,12 @@ button {
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__item:focus {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  transition: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .portfolio__article {
   display: block;
   overflow: visible;
 }
 .portfolio__article:focus {
+  padding-bottom: 0.1px;
   width: 100%;
   height: 100%;
   outline: none;
