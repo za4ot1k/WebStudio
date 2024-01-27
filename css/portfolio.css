@@ -300,10 +300,6 @@ button {
     padding: 24px 0px 94px 0px;
   }
 }
-.portfolio__box {
-  display: flex;
-  justify-content: center;
-}
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
@@ -313,6 +309,28 @@ button {
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item-last-child {
+    position: relative;
+    right: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item-last-child {
+    position: relative;
+    left: 0;
+  }
 }
 .portfolio__item {
   outline: 1px solid #EEE;
@@ -669,7 +687,7 @@ button {
 .footer__input {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  width: 270px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
@@ -686,6 +704,21 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 468px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {
@@ -1390,8 +1423,12 @@ button {
   flex-wrap: wrap;
   gap: 30px;
 }
+.command__list li {
+  max-width: 450px;
+}
 @media screen and (min-width: 768px) {
   .command__list li {
+    max-width: 354px;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
@@ -1438,6 +1475,7 @@ button {
   height: 20px;
 }
 .command__icons-list li {
+  flex-basis: 0%;
   width: 44px;
   height: 44px;
   transition: 0.25s;
@@ -1757,7 +1795,7 @@ button {
 .footer__input {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  width: 270px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
@@ -1774,6 +1812,21 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 468px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {

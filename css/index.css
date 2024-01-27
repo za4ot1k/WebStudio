@@ -609,8 +609,12 @@ button {
   flex-wrap: wrap;
   gap: 30px;
 }
+.command__list li {
+  max-width: 450px;
+}
 @media screen and (min-width: 768px) {
   .command__list li {
+    max-width: 354px;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
@@ -657,6 +661,7 @@ button {
   height: 20px;
 }
 .command__icons-list li {
+  flex-basis: 0%;
   width: 44px;
   height: 44px;
   transition: 0.25s;
@@ -976,7 +981,7 @@ button {
 .footer__input {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  width: 270px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
@@ -993,6 +998,21 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 468px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {

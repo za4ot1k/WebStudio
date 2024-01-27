@@ -5,10 +5,6 @@
         padding: 24px 0px 94px 0px ;
     }
 
-    &__box {
-        display: flex;
-        justify-content: center;
-    }
 
     &__list  {
         display: flex;
@@ -18,7 +14,27 @@
         align-content: center;
         column-gap: 30px;
         row-gap: 30px;
+
+        @media screen and (min-width:768px) {
+            justify-content: center;
+        }
+        @media screen and (min-width:1200px) {
+            justify-content: center;
+        }
     }
+
+    &__item-last-child {
+        @media screen and (min-width:768px) {
+            position: relative;
+            right: 200px;
+        }
+
+        @media screen and (min-width:1200px) {
+            position: relative;
+            left: 0;          
+        }
+    }
+
     
     &__item {
         outline: 1px solid #EEE;
