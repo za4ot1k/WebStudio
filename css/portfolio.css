@@ -870,6 +870,11 @@ button {
   width: 40px;
   height: 40px;
 }
+.menu__list-box {
+  display: flex;
+  flex-direction: column;
+  gap: 202px;
+}
 .menu__btn {
   display: block;
   margin-left: auto;
@@ -885,22 +890,31 @@ button {
 .menu__link {
   color: #212121;
   font-family: Roboto;
-  font-size: 40px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.8px;
 }
+@media screen and (min-width: 480px) {
+  .menu__link {
+    font-size: 40px;
+  }
+}
 .menu__link-info1 {
   display: block;
-  margin-top: 302px;
   color: #2196F3;
   font-family: Roboto;
-  font-size: 34px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.68px;
+}
+@media screen and (min-width: 480px) {
+  .menu__link-info1 {
+    font-size: 34px;
+  }
 }
 .menu__link-info2 {
   display: block;
@@ -927,6 +941,7 @@ button {
 }
 .menu__links-list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
   gap: 20px;
 }
