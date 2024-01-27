@@ -42,15 +42,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     border-radius: 4px;
     background: #fff;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    @media screen and (min-width:1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-close {
-    margin-left: 490px;
+    margin-right: 8px;
+    margin-left: auto;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background-color: #fff;
     border-radius: 50%;
@@ -74,9 +80,10 @@
 }
 
 .modal-title {
-    max-width: 448px;
+    max-width: 370px;
     text-align: center;
-    margin-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
     color: $second-color;
     font-family: Roboto;
     font-size: 20px;
@@ -84,9 +91,14 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.6px;
+
+    @media screen and (min-width:1200px) {
+        max-width: 448px;
+    }
 }
 
 .input-container1 {
+    width: 328px;
     display: flex;
     flex-direction: column;
     margin-left: 40px;
@@ -137,6 +149,7 @@
 }
 
 .modal-input {
+    width: 328px;
     caret-color: #000;
     position: relative;
     padding-left: 42px;
@@ -149,6 +162,7 @@
 }
 
 .modal-input2 {
+    width: 328px;
     caret-color: #000;
     position: relative;
     padding-left: 42px;
@@ -161,6 +175,7 @@
 }
 
 .modal-input3 {
+    width: 328px;
     caret-color: #000;
     position: relative;
     padding-left: 42px;
@@ -189,6 +204,8 @@
 }
 
 .modal-input4 {
+    margin: 0 auto;
+    width: 358px;
     position: relative;
     padding-left: 12px;
     outline: none;
@@ -255,7 +272,7 @@
 }
 
 .modal-form {
-    width: 528px;
+    width: 100%;
 }
 
 .checkbox-text {

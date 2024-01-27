@@ -435,9 +435,12 @@ button {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: flex-start;
+  max-width: 372px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .button__list {
+    max-width: 100%;
     justify-content: center;
   }
 }
@@ -871,9 +874,11 @@ button {
   height: 40px;
 }
 .menu__list-box {
-  display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 .menu__btn {
   padding: 0;
@@ -943,7 +948,7 @@ button {
 .menu__links-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 64px;
+  margin: 64px 0px 48px 0px;
   gap: 20px;
 }
 
@@ -1978,15 +1983,22 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal-close {
-  margin-left: 490px;
+  margin-right: 8px;
+  margin-left: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 50%;
@@ -2008,9 +2020,10 @@ button {
 }
 
 .modal-title {
-  max-width: 448px;
+  max-width: 370px;
   text-align: center;
-  margin-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
   color: #212121;
   font-family: Roboto;
   font-size: 20px;
@@ -2019,8 +2032,14 @@ button {
   line-height: normal;
   letter-spacing: 0.6px;
 }
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    max-width: 448px;
+  }
+}
 
 .input-container1 {
+  width: 328px;
   display: flex;
   flex-direction: column;
   margin-left: 40px;
@@ -2067,6 +2086,7 @@ button {
 }
 
 .modal-input {
+  width: 328px;
   caret-color: #000;
   position: relative;
   padding-left: 42px;
@@ -2079,6 +2099,7 @@ button {
 }
 
 .modal-input2 {
+  width: 328px;
   caret-color: #000;
   position: relative;
   padding-left: 42px;
@@ -2091,6 +2112,7 @@ button {
 }
 
 .modal-input3 {
+  width: 328px;
   caret-color: #000;
   position: relative;
   padding-left: 42px;
@@ -2119,6 +2141,8 @@ button {
 }
 
 .modal-input4 {
+  margin: 0 auto;
+  width: 358px;
   position: relative;
   padding-left: 12px;
   outline: none;
@@ -2184,7 +2208,7 @@ button {
 }
 
 .modal-form {
-  width: 528px;
+  width: 100%;
 }
 
 .checkbox-text {
