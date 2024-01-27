@@ -59,9 +59,10 @@ button {
 .menu__list-box {
   display: flex;
   flex-direction: column;
-  gap: 202px;
+  gap: 40px;
 }
 .menu__btn {
+  padding: 0;
   display: block;
   margin-left: auto;
   background-color: #fff;
