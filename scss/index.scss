@@ -1,3 +1,9 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+
+
 @import "./base/common";
 @import "./base/reset";
 
@@ -13,10 +19,6 @@
 @import "./partials/footer";
 @import "./partials/modal";
 
-
-@import "./utils/variables";
-@import "./utils/placeholders";
-@import "./utils/mixins";
 
 
 

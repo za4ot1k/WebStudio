@@ -101,8 +101,8 @@ button {
 }
 .header__nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .header__list-menu {
   align-items: center;
@@ -1016,8 +1016,8 @@ button {
 }
 .header__nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .header__list-menu {
   align-items: center;

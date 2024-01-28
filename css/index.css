@@ -1,3 +1,9 @@
+.modal-box, .modal-close, .footer__sbmit-btn, .footer__link, .footer__part2 .footer__link, .clients__link, .command__icon-link, .offers__title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -199,8 +205,8 @@ button {
 }
 .header__nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .header__list-menu {
   align-items: center;
@@ -307,8 +313,8 @@ button {
 }
 .header__infoBox {
   display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .header__infoBox {
@@ -1469,10 +1475,4 @@ button {
   top: 0;
   left: 0;
   opacity: 0;
-}
-
-.offers__title-box, .command__icon-link, .clients__link, .footer__part2 .footer__link, .footer__link, .footer__sbmit-btn, .modal-close, .modal-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=index.css.map */

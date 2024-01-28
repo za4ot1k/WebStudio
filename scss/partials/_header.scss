@@ -59,14 +59,10 @@
 
     &__logo2 {
         color: #000;
-    }
-    
-    &__nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    }    
 
-      
+    &__nav {
+        @include flex-mixin(space-between,center);
     }
 
     &__list-menu {
@@ -182,9 +178,8 @@
     }
 
     &__infoBox {
-        display: flex;
+        @include gap-mixin(10px);
         align-items: center;
-        gap: 10px;
 
         
         @media screen and (min-width: 768px) {
