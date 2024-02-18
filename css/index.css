@@ -419,7 +419,7 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 9999;
 }
 @media screen and (min-width: 1200px) {
@@ -442,7 +442,7 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 9999;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -454,14 +454,14 @@ button {
   }
 }
 .cap__button:hover {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   color: #2196f3;
   transition: 0.25s;
   transform: scale(1.1);
 }
 .cap__button:focus {
   outline: none;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   color: #2196f3;
   transition: 0.25s;
 }
