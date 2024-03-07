@@ -57,6 +57,7 @@ button {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -1085,7 +1086,6 @@ img {
   outline: #000;
 }
 .footer__sbmit-btn {
-  display: block;
   margin: 20px auto 0px auto;
   gap: 10px;
   border: none;

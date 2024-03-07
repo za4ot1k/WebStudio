@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="uk">Студія</title>
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link  href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap"  rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -119,19 +119,36 @@
           <h2 class="offers__tittle">Чим ми займаємося</h2>
           <ul class="offers__list">
             <li class="offers__item" data-aos="flip-left" data-aos-duration="500">
-              <img class="offers__img" src="./img/img-studio/keyboard.jpg" alt="keyboard" />
+              <picture>
+                  <source srcset="./img/desktop/keyboard@1x.webp 1x, ./img/desktop/keyboard@2x.webp 2x" media="(min-width: 1200px)">
+                  <!-- <source srcset="./img/tablet/keyboard@1x.webp 1x, ./img/tablet/keyboard@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="./img/mobile/keyboard@1x.webp 1x, ./img/mobile/keyboard@2x.webp 2x" media="(min-width: 320px)"> -->
+                  <img class="offers__img" src="./img/desktop/keyboard.webp" alt="keyboard" />
+              </picture>
               <div class="offers__title-box">
                 <h2 class="offers__title2">Десктопні додатки</h2>
               </div>
             </li>
             <li class="offers__item" data-aos="flip-up" data-aos-duration="500" data-aos-delay="300" >
-              <img class="offers__img" src="./img/img-studio/computer.jpg" alt="computer" />
+              <picture>
+                <source srcset="./img/desktop/laptop@1x.webp 1x, ./img/desktop/laptop@2x.webp 2x" media="(min-width: 1200px)">
+                <!-- <source srcset="./img/tablet/laptop@1x.webp 1x, ./img/tablet/laptop@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./img/mobile/laptop@1x.webp 1x, ./img/mobile/laptop@2x.webp 2x" media="(min-width: 320px)"> -->
+                <img  class="offers__img" src="./img/desktop/keyboard.webp"  alt="computer"  />
+              </picture>
+             
               <div class="offers__title-box">
                 <h2 class="offers__title2">Мобільні додатки</h2>
               </div>
             </li>
             <li class="offers__item" data-aos="flip-right" data-aos-duration="500" data-aos-delay="600" >
-              <img class="offers__img" src="./img/img-studio/phone.jpg" alt="phone" />
+              <picture>
+                <source srcset="./img/desktop/tablet@1x.webp 1x, ./img/desktop/tablet@2x.webp 2x" media="(min-width: 1200px)">
+                <!-- <source srcset="./img/tablet/tablet@1x.webp 1x, ./img/tablet/tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./img/mobile/tablet@1x.webp 1x, ./img/mobile/tablet@2x.webp 2x" media="(min-width: 320px)"> -->
+                <img  class="offers__img" src="./img/desktop/tablet.webp"  alt="phone"  />
+              </picture>
+              
               <div class="offers__title-box">
                 <h2 class="offers__title2">Дизайнерські рішення</h2>
               </div>
@@ -148,7 +165,12 @@
           <ul class="command__list">
             <li class="command__item">
               <article class="command__article">
-                <img class="command__img" src="./img/img-studio/boy4.jpg" alt="boy1" />
+                <picture> 
+                  <source srcset="./img/desktop/man1@1x.webp 1x, ./img/desktop/man1@2x.webp 2x" media="(min-width: 1200px)">
+                  <source srcset="./img/tablet/man1@1x.webp 1x, ./img/tablet/man1@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="./img/mobile/man1@1x.webp 1x, ./img/mobile/man1@2x.webp 2x" media="(min-width: 320px)">
+                  <img class="command__img" src="./img/mobile/man1.webp" alt="man1" />
+                </picture>
                 <h3 class="command__tittle">Ігор Дем'яненко</h3>
                 <p class="command__discription">Product Designer</p>
                 <ul class="command__icons-list">
@@ -185,7 +207,12 @@
             </li>
             <li>
               <article class="command__article">
-                <img class="command__img" src="./img/img-studio/boy3.jpg" alt="boy2" />
+                <picture> 
+                  <source srcset="./img/desktop/man2@1x.webp 1x, ./img/desktop/man2@2x.webp 2x" media="(min-width: 1200px)">
+                  <source srcset="./img/tablet/man2@1x.webp 1x, ./img/tablet/man2@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="./img/mobile/man2@1x.webp 1x, ./img/mobile/man2@2x.webp 2x" media="(min-width: 320px)">
+                  <img class="command__img" src="./img/mobile/man2.webp" alt="man2" />
+                </picture>
                 <h3 class="command__tittle">Ольга Рєпіна</h3>
                 <p class="command__discription">Frontend Developer</p>
                 <ul class="command__icons-list">
@@ -222,7 +249,12 @@
             </li>
             <li>
               <article class="command__article">
-                <img class="command__img" src="./img/img-studio/boy1.jpg             " alt="boy3" />
+                <picture> 
+                  <source srcset="./img/desktop/man3@1x.webp 1x, ./img/desktop/man3@2x.webp 2x" media="(min-width: 1200px)">
+                  <source srcset="./img/tablet/man3@1x.webp 1x, ./img/tablet/man3@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="./img/mobile/man3@1x.webp 1x, ./img/mobile/man3@2x.webp 2x" media="(min-width: 320px)">
+                  <img class="command__img" src="./img/mobile/man3.webp" alt="man3" />
+                </picture>
                 <h3 class="command__tittle">Микола Тарасов</h3>
                 <p class="command__discription">Marketing</p>
                 <ul class="command__icons-list">
@@ -259,7 +291,12 @@
             </li>
             <li>
               <article class="command__article">
-                <img class="command__img" src="./img/img-studio/boy2.jpg" alt="boy4" />
+                <picture> 
+                  <source srcset="./img/desktop/man4@1x.webp 1x, ./img/desktop/man4@2x.webp 2x" media="(min-width: 1200px)">
+                  <source srcset="./img/tablet/man4@1x.webp 1x, ./img/tablet/man4@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="./img/mobile/man4@1x.webp 1x, ./img/mobile/man4@2x.webp 2x" media="(min-width: 320px)">
+                  <img class="command__img" src="./img/mobile/man4.webp" alt="man4" />
+                </picture>
                 <h3 class="command__tittle">Михайло Єрмаков</h3>
                 <p class="command__discription">UI Designer</p>
                 <ul class="command__icons-list">
