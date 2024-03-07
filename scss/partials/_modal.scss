@@ -12,343 +12,356 @@
     overflow: hidden;
   } */
 
-  .backdrop {
-    transition-duration: .25s;
-    transition-timing-function: $transition-timing-function;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.20);
-    opacity: 1;
+.backdrop {
+  transition-duration: 0.25s;
+  transition-timing-function: $transition-timing-function;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 10;
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
-   
+
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
+.modal-window {
+  transition: 0.5s;
+  padding: 8px 0px 40px 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 450px;
+  height: 609px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-.modal-window { 
-    transition: .5s;
-    padding: 8px 0px 40px 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    width: 450px;
-    height: 609px;
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-    @media screen and (min-width:1200px) {
-        width: 528px;
-        height: 581px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close {
-    margin-right: 8px;
-    margin-left: auto;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    background-color: #fff;
-    border-radius: 50%;
-    @extend %flexcenter;
-    width: 30px;
-    height: 30px;
-    transition:.25s;
-    transition-timing-function: $transition-timing-function;
+  margin-right: 8px;
+  margin-left: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 50%;
+  @extend %flexcenter;
+  width: 30px;
+  height: 30px;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
 }
 
-.modal-close:hover .hrestyk{
-    fill: $main-color;
+.modal-close:hover .hrestyk {
+  fill: $main-color;
 }
-
 
 .hrestyk {
-    fill: #000;
-    width: 18px;
-    height: 18px;
-    transition: .25s;
+  fill: #000;
+  width: 18px;
+  height: 18px;
+  transition: 0.25s;
 }
 
 .modal-title {
-    max-width: 370px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    color: $second-color;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
+  max-width: 370px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  color: $second-color;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
 
-    @media screen and (min-width:1200px) {
-        max-width: 448px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 448px;
+  }
 }
 
 .input-container1 {
-    width: 328px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
-    transition:.25s;
-    transition-timing-function: $transition-timing-function;
-   
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
 }
 
 .input-container1:hover .input-icon {
-    fill: $main-color;
+  fill: $main-color;
 }
 
 .input-container2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
-    transition:.25s;
-    transition-timing-function: $transition-timing-function;
-   
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
 }
 
 .input-container2:hover .input-icon2 {
-    fill: $main-color;
+  fill: $main-color;
 }
 
 .input-container3 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
-    transition:.25s;
-    transition-timing-function: $transition-timing-function;
-   
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
 }
 
 .input-container3:hover .input-icon3 {
-    fill: $main-color;
+  fill: $main-color;
 }
 
-
 .input-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .modal-input {
-    width: 328px;
-    caret-color: #000;
-    position: relative;
-    padding-left: 42px;
-    outline: none;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
-    height: 40px;
-    transition:.25s;
-    transition-timing-function: $transition-timing-function;
+  width: 328px;
+  caret-color: #000;
+  position: relative;
+  padding-left: 42px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 40px;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
 }
 
 .modal-input2 {
-    width: 328px;
-    caret-color: #000;
-    position: relative;
-    padding-left: 42px;
-    outline: none;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
-    height: 40px;
-    transition:.25s;
-    transition-timing-function: $transition-timing-function;
+  width: 328px;
+  caret-color: #000;
+  position: relative;
+  padding-left: 42px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 40px;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
 }
 
 .modal-input3 {
-    width: 328px;
-    caret-color: #000;
-    position: relative;
-    padding-left: 42px;
-    outline: none;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
-    height: 40px;
-    transition:.25s;
-    transition-timing-function: $transition-timing-function;
+  width: 328px;
+  caret-color: #000;
+  position: relative;
+  padding-left: 42px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 40px;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
 }
 
-.modal-input:hover,.modal-input:focus,.modal-input2:hover,.modal-input2:focus,.modal-input3:hover,.modal-input3:focus {
-    border: 1px solid $main-color;
+.modal-input:hover,
+.modal-input:focus,
+.modal-input2:hover,
+.modal-input2:focus,
+.modal-input3:hover,
+.modal-input3:focus {
+  border: 1px solid $main-color;
 }
 
 .modal-input:focus + .input-icon {
-    fill: $main-color;
+  fill: $main-color;
 }
 
 .modal-input2:focus + .input-icon2 {
-    fill: $main-color;
+  fill: $main-color;
 }
 
 .modal-input3:focus + .input-icon3 {
-    fill: $main-color;
+  fill: $main-color;
 }
 
 .modal-input4 {
-    margin: 0 auto;
-    width: 358px;
-    position: relative;
-    padding-left: 12px;
-    outline: none;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
-    height: 40px;
-    padding-bottom: 97.4px;
-    transition:.25s;
-    transition-timing-function: $transition-timing-function;
-} 
+  margin: 0 auto;
+  width: 358px;
+  position: relative;
+  padding-left: 12px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 40px;
+  padding-bottom: 97.4px;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
+}
 
-.modal-input4:hover,.modal-input4:focus {
-    border: 1px solid $main-color;
+.modal-input4:hover,
+.modal-input4:focus {
+  border: 1px solid $main-color;
 }
 
 .visually-hidden {
-    margin:10px 0px 4px 0px;
-    color: #757575;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
+  margin: 10px 0px 4px 0px;
+  color: #757575;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
 }
 
 .input-icon {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    left: 52px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 52px;
+  top: 127px;
+  z-index: 1;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
+
+  @media screen and (min-width: 1200px) {
     top: 104px;
-    z-index: 1;
-    transition: .25s ;
-    transition-timing-function: $transition-timing-function;
+  }
 }
 
 .input-icon2 {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    left: 52px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 52px;
+  top: 200px;
+  z-index: 1;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
+
+  @media screen and (min-width: 1200px) {
     top: 176px;
-    z-index: 1;
-    transition: .25s ;
-    transition-timing-function: $transition-timing-function;
+  }
 }
 
-.input-icon3{
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    left: 52px;
+.input-icon3 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 52px;
+  top: 272px;
+  z-index: 1;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
+
+  @media screen and (min-width: 1200px) {
     top: 248px;
-    z-index: 1;
-    transition: .25s ;
-    transition-timing-function: $transition-timing-function;
+  }
 }
 
 .modal-box {
-    @extend %flexcenter;
-    gap: 8px;
-    margin-top: 25px;
+  @extend %flexcenter;
+  gap: 8px;
+  margin-top: 25px;
 }
 
 .modal-form {
-    width: 100%;
+  width: 100%;
 }
 
 .checkbox-text {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    letter-spacing: 0.42px;
-    transition:.25s;
-    transition-timing-function: $transition-timing-function;
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  transition: 0.25s;
+  transition-timing-function: $transition-timing-function;
 }
 
 .modal-conditions {
-    color: $main-color;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-    text-decoration-line: underline;
+  color: $main-color;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  text-decoration-line: underline;
 }
 
 .modal-submitBtn {
-    margin: 30px auto;
-    padding: 10px 52px 10px 52px;
-    border: none;
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px; /* 187.5% */
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    background: $main-color;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+  padding: 10px 52px 10px 52px;
+  border: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: $main-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button-box {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .fake-chekbox {
-    position: relative;
-    /* background-color: $main-color; */
-    width: 12px;
-    height: 11px;
-    border: 2px solid $second-color;
-    border-radius: 2px;
+  position: relative;
+  /* background-color: $main-color; */
+  width: 12px;
+  height: 11px;
+  border: 2px solid $second-color;
+  border-radius: 2px;
 }
 
 .galochka {
-    width: 13px;
-    height: 12px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* opacity: 0; */
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* opacity: 0; */
 }
 
 .modal-checkbox:checked + .fake-chekbox {
-    background-color: $main-color;
-    opacity: 1;
-    border: none;
-    width: 16px;
-    height: 15px;
+  background-color: $main-color;
+  opacity: 1;
+  border: none;
+  width: 16px;
+  height: 15px;
 }
 
 .modal-checkbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }

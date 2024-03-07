@@ -1171,6 +1171,7 @@ img {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  z-index: 10;
 }
 
 .backdrop.is-hidden {
@@ -1331,7 +1332,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover, .modal-input:focus, .modal-input2:hover, .modal-input2:focus, .modal-input3:hover, .modal-input3:focus {
+.modal-input:hover,
+.modal-input:focus,
+.modal-input2:hover,
+.modal-input2:focus,
+.modal-input3:hover,
+.modal-input3:focus {
   border: 1px solid #2196f3;
 }
 
@@ -1361,7 +1367,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input4:hover, .modal-input4:focus {
+.modal-input4:hover,
+.modal-input4:focus {
   border: 1px solid #2196f3;
 }
 
@@ -1381,10 +1388,15 @@ img {
   height: 18px;
   position: absolute;
   left: 52px;
-  top: 104px;
+  top: 127px;
   z-index: 1;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .input-icon {
+    top: 104px;
+  }
 }
 
 .input-icon2 {
@@ -1392,10 +1404,15 @@ img {
   height: 18px;
   position: absolute;
   left: 52px;
-  top: 176px;
+  top: 200px;
   z-index: 1;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .input-icon2 {
+    top: 176px;
+  }
 }
 
 .input-icon3 {
@@ -1403,10 +1420,15 @@ img {
   height: 18px;
   position: absolute;
   left: 52px;
-  top: 248px;
+  top: 272px;
   z-index: 1;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .input-icon3 {
+    top: 248px;
+  }
 }
 
 .modal-box {
@@ -1445,7 +1467,7 @@ img {
   margin: 30px auto;
   padding: 10px 52px 10px 52px;
   border: none;
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
