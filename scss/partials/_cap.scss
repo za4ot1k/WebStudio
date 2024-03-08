@@ -2,8 +2,7 @@
   padding: 118px 0px 118px 0px;
   margin: 0 auto;
   max-width: 1600px;
-  background-image: url(../img/overlay.png),
-    url(./../../img/desktop/hero-bg@1x.webp);
+  background-image: url(./img/overlay.png), url(./img/desktop/hero-bg@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1600px 600px;
@@ -11,7 +10,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(./../../img/desktop/hero-bg@2x.webp);
+    background-image: url(./img/desktop/hero-bg@2x.webp);
   }
 
   @media screen and (min-width: 1200px) {
