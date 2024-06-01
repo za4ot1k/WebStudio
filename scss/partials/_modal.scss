@@ -105,6 +105,10 @@
   margin-right: 40px;
   transition: 0.25s;
   transition-timing-function: $transition-timing-function;
+
+  @media screen and(min-width:480px) {
+    margin-left: 77px;
+  }
 }
 
 .input-container1:hover .input-icon {
@@ -118,6 +122,10 @@
   margin-right: 40px;
   transition: 0.25s;
   transition-timing-function: $transition-timing-function;
+
+  @media screen and(min-width:480px) {
+    margin-left: 77px;
+  }
 }
 
 .input-container2:hover .input-icon2 {
@@ -131,6 +139,10 @@
   margin-right: 40px;
   transition: 0.25s;
   transition-timing-function: $transition-timing-function;
+
+  @media screen and(min-width:480px) {
+    margin-left: 77px;
+  }
 }
 
 .input-container3:hover .input-icon3 {

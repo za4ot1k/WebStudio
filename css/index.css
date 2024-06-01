@@ -1304,7 +1304,7 @@ img {
   width: 328px;
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 77px;
   margin-right: 40px;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1317,7 +1317,7 @@ img {
 .input-container2 {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 77px;
   margin-right: 40px;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1330,12 +1330,11 @@ img {
 .input-container3 {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: 77px;
   margin-right: 40px;
   transition: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .input-container3:hover .input-icon3 {
   fill: #2196f3;
 }
